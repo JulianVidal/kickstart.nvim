@@ -2,8 +2,6 @@ tags
 test.sh
 .luarc.json
 nvim
-<<<<<<< HEAD
-=======
 lazy-lock.json
 .DS_Store
->>>>>>> 2f8323d (Added remaps and sets)
+
