@@ -1,2 +1,2 @@
-vim.o.background = 'light'
-vim.cmd [[colorscheme everforest]]
+vim.o.background = 'dark'
+vim.cmd [[colorscheme gruvbox]]
