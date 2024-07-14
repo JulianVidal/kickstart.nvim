@@ -1,4 +1,5 @@
-vim.opt.relativenumber = true
+-- Already included in init.lua
+-- vim.opt.relativenumber = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
