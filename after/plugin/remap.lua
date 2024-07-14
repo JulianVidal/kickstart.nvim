@@ -26,3 +26,12 @@ vim.keymap.set('n', '<leader>f', vim.lsp.buf.format, { desc = 'Format buffer' })
 
 -- vim.keymap.set("i", "jk", "<Esc>");
 -- vim.keymap.set("v", "jk", "<Esc>");
+
+-- When using a global mark,
+-- it also does '" to go to where the buffer was exited
+-- it also does zz to center the page
+local letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+for j = 1, #letters do
+  local letter = letters:sub(j, j)
+  vim.keymap.set({ 'n', 'v' }, "'" .. letter, "'" .. letter .. [['"zz]])
+end

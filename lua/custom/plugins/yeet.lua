@@ -42,7 +42,7 @@ return {
         function()
           require('yeet').toggle_post_write()
         end,
-        desc = 'Toggle Yeet After Write',
+        desc = 'Toggle Yeet After Save',
       },
       {
         -- Run command without clearing terminal
