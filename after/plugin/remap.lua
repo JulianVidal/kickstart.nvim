@@ -1,9 +1,9 @@
 -- vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = 'Enter Ex-mode' })
---
-require('which-key').register {
-  ['<leader>y'] = { name = '[Y]eet', _ = 'which_key_ignore' },
-}
 
+require('which-key').add {
+  { '<leader>y', group = '[Y]eet' },
+}
+-- , { '<leader>y_', hidden = true }
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Move Block' })
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move Block' })
 

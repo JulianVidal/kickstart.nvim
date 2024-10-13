@@ -5,12 +5,6 @@ return {
       'stevearc/dressing.nvim', -- optional, provides sane UX
     },
     cmd = 'Yeet',
-    -- opts = {},
-    config = function()
-      require('which-key').register {
-        ['<leader>y'] = { name = '[Y]eet', _ = 'which_key_ignore' },
-      }
-    end,
     keys = {
       {
         -- Open target selection
