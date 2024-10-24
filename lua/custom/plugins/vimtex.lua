@@ -4,6 +4,7 @@ return {
   init = function()
     -- VimTeX configuration goes here, e.g.
     vim.g.vimtex_view_method = 'sioyek'
+    vim.opt.conceallevel = 2
 
     -- Focus back on nvim on macos according to :h vimtex-events
     if jit.os == 'OSX' then
