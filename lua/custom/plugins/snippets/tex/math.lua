@@ -530,17 +530,17 @@ return {
     t '^',
   }, { condition = in_mathzone }),
 
-  s({ trig = '¨', name = 'Superscript', snippetType = 'autosnippet', wordTrig = false }, {
+  s({ trig = '"', name = 'Superscript', snippetType = 'autosnippet', wordTrig = false }, {
     t '^{',
     d(1, get_visual),
     t '}',
   }, { condition = in_mathzone }),
 
-  s({ trig = '¨', name = 'Superscript', snippetType = 'autosnippet', wordTrig = false }, {
-    t '^{',
-    d(1, get_visual),
-    t '}',
-  }, { condition = in_mathzone }),
+  -- s({ trig = '¨', name = 'Superscript', snippetType = 'autosnippet', wordTrig = false }, {
+  --   t '^{',
+  --   d(1, get_visual),
+  --   t '}',
+  -- }, { condition = in_mathzone }),
 
   s({ trig = "'", name = 'Subscript and superscript', snippetType = 'autosnippet', wordTrig = false }, {
     t '_{',
@@ -1035,6 +1035,13 @@ return {
       return snip.captures[1]
     end),
     t '\\times',
+  }, { condition = in_mathzone }),
+
+  s({ trig = 'ho', name = 'Hole', snippetType = 'autosnippet' }, {
+    f(function(_, snip)
+      return snip.captures[1]
+    end),
+    t '\\bullet',
   }, { condition = in_mathzone }),
 
   s({ trig = 'cd', name = 'Centered dot', snippetType = 'autosnippet' }, {
@@ -2521,7 +2528,7 @@ return {
     t '}',
   }, { condition = in_mathzone }),
 
-  s({ trig = 'sf', name = 'Set difference', snippetType = 'autosnippet' }, {
+  s({ trig = 'sd', name = 'Set difference', snippetType = 'autosnippet' }, {
     f(function(_, snip)
       return snip.captures[1]
     end),
