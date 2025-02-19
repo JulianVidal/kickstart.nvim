@@ -1929,7 +1929,7 @@ return {
     f(function(_, snip)
       return snip.captures[1]
     end),
-    t '\\varepsilon',
+    t '\\epsilon',
   }, { condition = in_mathzone }),
 
   s({ trig = '[.]G', name = 'Uppercase gamma', snippetType = 'autosnippet', regTrig = true }, {
@@ -2619,7 +2619,7 @@ return {
     f(function(_, snip)
       return snip.captures[1]
     end),
-    t '\\longmapsto',
+    t '\\mapsto',
   }, { condition = in_mathzone }),
 
   -- Sums
