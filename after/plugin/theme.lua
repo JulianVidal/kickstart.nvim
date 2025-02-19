@@ -1,5 +1,5 @@
 vim.o.background = 'dark'
-vim.cmd [[colorscheme gruvbox]]
+vim.cmd [[colorscheme gruvbox-material]]
 
 vim.cmd [[ highlight SignColumn None ]]
 vim.cmd [[ highlight clear StatusLineNC ]]
