@@ -20,3 +20,5 @@ vim.opt.colorcolumn = ''
 
 vim.opt.clipboard = ''
 vim.opt.wrap = false
+
+vim.opt.spellfile = vim.fn.stdpath 'config' .. '/spell/en.utf-8.add'
